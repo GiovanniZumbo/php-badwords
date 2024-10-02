@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BadWords</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css' integrity='sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==' crossorigin='anonymous'/>
 </head>
 
 <body>
-<h1>Prova PHP</h1>
-<form action="censore.php" method="get">
+    <div class="container">
+    <h1 class="text-center my-4">BadWords</h1>
 
-<input type="text">
-</form>
+    <div class="mb-3">
+        <label for="user-text" class="form-label">Inserisci qui il tuo testo</label>
+        <textarea class="form-control" id="user-text" rows="3"></textarea>
+    </div>
+    <div class="mb-3">
+        <label for="user-censure" class="form-label">Inserisci qui sotto la parola da censurare</label>
+        <input type="text" class="form-control" id="user-censure">
+    </div>
+    <button type="submit" class="btn btn-primary">Invia</button>
+</div>
+
     
 </body>
 </html>
